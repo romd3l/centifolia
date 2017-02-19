@@ -1,123 +1,226 @@
-<html>
-<header>
-<style>
-div{
-height:80vh;
-margin:0;
-padding:0;
-}
-html{
-margin:0;
-padding:0;
-}
+<!DOCTYPE html>
+<html class=" js   nav-is-stuck">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CENTIFOLIA - Monnaie Locale Complémentaire du Pays de Grasse</title>
 
-
-
-
-
-
-
-
-
-
-* { box-sizing: border-box; }
-
-body { font-family: sans-serif; }
-
-/* ---- grid ---- */
-
-.grid {
-  background: #EEE;
-  max-width: 1200px;
+   <style>
+     	* {
+  box-sizing: border-box;
+  transition: all .5s ease;
 }
 
-/* clearfix */
-.grid:after {
-  content: '';
+body {
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+  font-family: "Baloo Bhai", sans-serif;
+  color: #333;
+  padding-bottom: 60px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 990px;
+  border-bottom: 2px solid #ccc;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+     .flexbox-slideshow {
+  position: relative;
+  overflow: hidden;
+}
+.slideshow {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.slideshow li:not(.placeholder) {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.slideshow li img {
+  width: 100%;
+  max-width: 100%;
   display: block;
-  clear: both;
+  opacity: 0;
 }
-
-/* ---- grid-item ---- */
-
-.grid-sizer,
-.grid-item {
-  width: 20%;
+.slideshow li.active {
+  z-index: 2;
 }
-
-.grid-item {
-  height: 120px;
-  float: left;
-  background: #D26;
-  border: 2px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.5);
-  border-radius: 5px;
+.slideshow li.active img {
+  opacity: 1;
 }
+.slideshow li .caption-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+ 
+.slideshow li .caption {
+  background: rgba(0, 0, 0, 0.5);
+  color: #f2f2f2;
+  padding: 10px 20px;
+  margin-left: -100%;
+}
+ 
+.slideshow li .caption.caption-title {
+  margin-bottom: 10px;
+  transition: all .2s ease;
+}
+ 
+.slideshow li .caption.caption-title > * {
+  margin: 0;
+}
+ 
+.slideshow li.active .caption {
+  margin-left: 0;
+}
+.dotnav {
+  position: absolute;
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  height: 100%;
+}
+ 
+.dotnav li span {
+  border-radius: 50%;
+  display: block;
+  height: 20px;
+  width: 20px;
+  margin-right: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  box-shadow: 0px 1px 6px #000;
+}
+ 
+.dotnav li.active span {
+  background: rgba(255, 255, 255, 0.5);
+  cursor: default;
+}
+ 
+.dotnav li:last-child span {
+  margin-right: 0;
+}
+   </style>
+	
+</head>
 
-.grid-item--width2 { width:  40%; }
-.grid-item--width3 { width:  60%; }
-
-.grid-item--height2 { height: 200px; }
-.grid-item--height3 { height: 260px; }
-.grid-item--height4 { height: 360px; }
-
-
-
-
-</style>
-<script>
-// external js: masonry.pkgd.js
-
-$('.grid').masonry({
-  itemSelector: '.grid-item',
-  columnWidth: '.grid-sizer',
-  percentPosition: true
-});
-
-</script>
-</header>
 <body>
+      <div class="container">
+    <h1>La monnaie</h1>
+    <div class="flexbox-slideshow">
+        <ul class="slideshow">
+            <li class="placeholder">
+              <img src="img/placeholder.jpg">
+            </li>
+            <li class="slide active" id="slide-1">
+    <img  src="img/monnaie-01.jpg">
+    <div class="caption-container">
+        <div class="caption caption-title">
+            <h2>La monnaie</h2>
+        </div>
+        <div class="caption caption-author">
+            <span class="author">CENTIFOLIA</span>
+        </div>
+    </div>
+</li>
+            <li class="slide" id="slide-2">
+    <img  src="img/monnaie-02.jpg">
+    <div class="caption-container">
+        <div class="caption caption-title">
+            <h2>La monnaie</h2>
+        </div>
+        <div class="caption caption-author">
+            <span class="author">CENTIFOLIA</span>
+        </div>
+    </div>
+</li>
+           <li class="slide" id="slide-3">
+    <img  src="img/monnaie-03.jpg">
+    <div class="caption-container">
+        <div class="caption caption-title">
+            <h2>La monnaie</h2>
+        </div>
+        <div class="caption caption-author">
+            <span class="author">CENTIFOLIA</span>
+        </div>
+    </div>
+</li>
+            <li class="slide" id="slide-4">
+    <img  src="img/monnaie-04.jpg">
+    <div class="caption-container">
+        <div class="caption caption-title">
+            <h2>La monnaie</h2>
+        </div>
+        <div class="caption caption-author">
+            <span class="author">CENTIFOLIA</span>
+        </div>
+    </div>
+</li>
+            <li class="slide" id="slide-5">
+    <img  src="img/monnaie-05.jpg">
+    <div class="caption-container">
+        <div class="caption caption-title">
+            <h2>La monnaie</h2>
+        </div>
+        <div class="caption caption-author">
+            <span class="author">CENTIFOLIA</span>
+        </div>
+    </div>
+</li>    
+        </ul>
+        <ul class="dotnav">
+            <li class="dotnav-item active" onclick="changeOrder(this, 1)"><span></span></li>
+            <li class="dotnav-item" onclick="changeOrder(this, 2)"><span></span></li>
+            <li class="dotnav-item" onclick="changeOrder(this, 3)"><span></span></li>
+            <li class="dotnav-item" onclick="changeOrder(this, 4)"><span></span></li>
+            <li class="dotnav-item" onclick="changeOrder(this, 5)"><span></span></li>
+        </ul>
+    </div>
+ </div>
+ <script type="text/javascript">
+     function changeOrder(dot, number) {
+         var slides = document.querySelectorAll(".slide");
+         var dots = document.querySelectorAll(".dotnav-item");
 
+         for (var i = 0; i < slides.length; i++) {
+             slides[i].classList.remove('active');
+             dots[i].classList.remove('active');
+         }
+         var elemName = "slide-" + number;
+         var elem = document.getElementById(elemName);
+         elem.classList.add('active');
+         dot.classList.add('active');
 
-
-<h1>Masonry - fluid columnWidth</h1>
-
-<div class="grid">
-  <div class="grid-sizer"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item grid-item--width2 grid-item--height2"></div>
-  <div class="grid-item grid-item--height3"></div>
-  <div class="grid-item grid-item--height2"></div>
-  <div class="grid-item grid-item--width3"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item grid-item--height2"></div>
-  <div class="grid-item grid-item--width2 grid-item--height3"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item grid-item--height2"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item grid-item--width2 grid-item--height2"></div>
-  <div class="grid-item grid-item--width2"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item grid-item--height2"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item grid-item--height3"></div>
-  <div class="grid-item grid-item--height2"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item grid-item--height2"></div>
-</div>
-
-
-
-
-
-
-
-
-
-
+     }</script>
 
 </body>
+
 </html>
