@@ -39,7 +39,6 @@ a.btn{
 	font-weight: 800;
 	text-align: center;
 }
-
 hr{
 	width: 150px;
 	height: 2px;
@@ -47,12 +46,10 @@ hr{
 	border: 0;
 	margin-bottom: 80px;
 }
-
 section{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 	padding: 0;
 }
 
@@ -125,7 +122,7 @@ header{
 
 header h2{
 	font-family: 'Croissant One', sans-serif;
-   
+
 }
 
 header nav{
@@ -135,13 +132,13 @@ header nav{
 header nav li{
 	margin: 0 15px;
 }
-    
+
 header nav li:first-child{
-	margin-left: 0;	
+	margin-left: 0;
 }
 
 header nav li:last-child{
-	margin-right: 10%;	
+	margin-right: 10%;
 }
 
 
@@ -155,7 +152,7 @@ header nav li:last-child{
 
 @media (max-width: 700px){
 	header{
-		flex-direction: column;		
+		flex-direction: column;
 	}
 
 	header h2{
@@ -227,8 +224,8 @@ header nav li:last-child{
 
 
 
-.scroll-bas:hover, 
-.scroll-bas:focus{  
+.scroll-bas:hover,
+.scroll-bas:focus{
 	background: url('imgs/scroll-bas-sprite.png') no-repeat 0 -75px;
 	width: 96px;
 	height: 73px;
@@ -253,7 +250,7 @@ header nav li:last-child{
 	}
 
 	.centifolia h1{
-		font-size: 48px;	
+		font-size: 48px;
 	}
 
 	.centifolia h3{
@@ -354,7 +351,7 @@ header nav li:last-child{
 	padding: 20px;
 	height: 350px;
 	border-radius: 3px;
-    
+
 	background-clip: content-box;
 	background-size: cover;
 	background-position: center;
@@ -513,7 +510,7 @@ header nav li:last-child{
 	padding: 20px;
 	height: 350px;
 	border-radius: 3px;
-    
+
 	background-clip: content-box;
 	background-size: cover;
 	background-position: center;
@@ -578,15 +575,15 @@ footer ul{
 }
 
 footer ul li{
-	margin: 0 8px;	
+	margin: 0 8px;
 }
 
 footer ul li:first-child{
-	margin-left: 0;	
+	margin-left: 0;
 }
 
 footer ul li:last-child{
-	margin-right: 0;	
+	margin-right: 0;
 }
 
 footer p{
@@ -628,30 +625,30 @@ footer p a{
 
 .side-btns a{
                 transform: rotate(-90deg);
-				-webkit-transform: rotate(-90deg); 
-				-moz-transform: rotate(-90deg); 
-				-o-transform: rotate(-90deg); 
+				-webkit-transform: rotate(-90deg);
+				-moz-transform: rotate(-90deg);
+				-o-transform: rotate(-90deg);
 				filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-                display: block; 
-                background: #dcdcdc; 
+                display: block;
+                background: #dcdcdc;
                text-align:center;
-                height: 15px; 
+                height: 15px;
                 width: 165px;
                 padding: 8px 16px;
-                color: #fff; 
-                font-family: Arial, sans-serif; 
-                font-size: 17px; 
-                font-weight: bold; 
-                text-decoration: none; 
+                color: #fff;
+                font-family: Arial, sans-serif;
+                font-size: 17px;
+                font-weight: bold;
+                text-decoration: none;
                 border-bottom: solid 1px #333; border-left: solid 1px #333; border-right: solid 1px #fff;
-        
+
 }
 
-.side-btns a:hover { 
-				background: #CCC; 
+.side-btns a:hover {
+				background: #CCC;
 			}
 
- 
+
 
 
 /*HEADER (sticky)*/
@@ -698,7 +695,7 @@ footer p a{
 	height: 4px;
 	background-color: #e6007e;
 
-	
+
 }
 .header-nav a:hover:after,
 .header-nav a:focus:after {
@@ -719,7 +716,7 @@ img {
 	/* http://caniuse.com/#feat=css-sticky */
 	/* not good support at this time (nov 2015) */
 	/* so use fixed if JS activated */
-	position: sticky; 
+	position: sticky;
 }
 .nav-is-stuck .main-header {
 	position: fixed;
@@ -739,9 +736,9 @@ img {
 	header .headerLogo {margin:25px auto 0;text-align:center;}
 	header .headerLogo img {}
 	header .headerLogo .accroche {font:300 25px "Helvetica";line-height:24px;color:#1C2E36}
-	
+
 	header .headerContent nav {position:absolute;clear:left;top:20px;font-size:22px;color:#1D1D1B;text-align:center;z-index:97;padding:0 10px;}
-	
+
 	header .headerContent nav .headerMenu {display:inline-block;position:relative;cursor:pointer;}
 	header .headerContent nav .headerMenu .headerMenuTitle {display:block;font-family: Helvetica;font-size:17px;color: #FFFFFF;margin-top:7px;text-align:left;}
 	header .headerContent nav .headerMenu #hamburger {width:50px;margin-right:12px;/*float:left;*/}
@@ -753,13 +750,13 @@ img {
 
 	/*header .headerLogo {position:absolute;z-index:9;left:0;right:0;top:25px;margin:auto;}
 	header .headerLogo img {width:auto;height:auto;}*/
-	
+
 	header .mainMenu {position:fixed;/*z-index:96;*/background:#1D1D1B;width:360px;height:100%;top:0;margin-left:-380px;padding-top:100px;left:0;transition: margin 0.5s;overflow:hidden;}
-	
+
 	header .mainMenu.open {margin-left:0;transition:margin 0.5s;}
 	header .mainMenu > li {display:block;padding:0;width:100%;transition: width 0.5s;margin-bottom:1px;border-bottom:1px solid #979797;}
 	header .mainMenu > li a {display:inline-block;width:88%;padding:20px 30px 10px 30px;font:bold 18px "Helvetica";line-height:34px;color:#FFFFFF;transition:1s;text-transform:uppercase;}
-	header .mainMenu > li a:hover {background:#000000;color:white;transition:0.4s;}	
+	header .mainMenu > li a:hover {background:#000000;color:white;transition:0.4s;}
 	header .mainMenu > li.current > a {color:#FFFFFF;}
 	header .mainMenu > li a big {display:none;}
 	header .mainMenu > li .deco {display:inline-block;margin-left:5px;}
@@ -771,7 +768,7 @@ img {
 
 	header .mainMenu > li.mainMenuLogo {border-bottom:none;text-align:center;}
 	header .mainMenu > li.mainMenuLogo img {margin-bottom:22px;}
-	
+
 	header .mainMenu > li.mainMenuBlock {color:#FFFFFF;border-bottom:none;padding:43px 20px 10px 20px;box-sizing:border-box;margin-bottom:0;}
 	header .mainMenu > li.mainMenuBlock .mainMenuBlockContent {box-sizing:border-box;position:relative;}
 	header .mainMenu > li.mainMenuBlock:nth-last-child(2) {background-color:#E56D71;margin-top:55px;}
@@ -780,7 +777,7 @@ img {
 	header .mainMenu > li.mainMenuBlock .mainMenuBlockContent span:nth-child(1) {padding-bottom:14px;margin-bottom:12px;border-bottom:2px solid #FFFFFF;font-size:20px;font-weight:bold;}
 	header .mainMenu > li.mainMenuBlock .mainMenuBlockContent span:nth-child(2) {font-size:18px;line-height:20px;}
 	header .mainMenu > li.mainMenuBlock .mainMenuBlockContent img {position:absolute;top:19px;right:0;}
-	
+
 	header .headerContent .sideMenu {position:absolute;top:24px;right:20px;color:white;}
 	header .headerContent .sideMenu > li {display:inline-block;margin-right:20px;font:300 16px "Helvetica";color:#FFFFFF;vertical-align:middle;}
 	header .headerContent .sideMenu > li:last-child {margin-right:0;}
@@ -788,7 +785,7 @@ img {
 	header .headerContent .sideMenu > li a:hover {font-weight:600 !important;transition:color 0.5s;}
 	header .headerContent .sideMenu > li.current a {font-weight:600 !important;}
 	header .headerContent .sideMenu > li .deco  {display:inline-block;vertical-align:middle;margin-right:10px;}
-	
+
 	.overlay {display:none;background:rgba(0,0,0,1);height:100%;width:100%;position:fixed;z-index:1;}
 
 	/*mixitup*/
@@ -820,7 +817,7 @@ button{
 }
 
 button.active{
-  background: #deac94;    
+  background: #deac94;
 }
 
 
@@ -837,7 +834,7 @@ button + label{
   text-align: justify;
   font-size: 0.1px;
   background: #deac94;
-  
+
   -webkit-backface-visibility: hidden;
 }
 
@@ -846,7 +843,7 @@ button + label{
     margin-left: 40px;
     width: 200px;
     height: 100px;
-    
+
 }
 .container:after{
   content: '';
@@ -863,7 +860,7 @@ button + label{
 .container .mix{
   background: #dcdcdc;
   margin-bottom: 2%;
-  display: none;    
+  display: none;
 }
 
 .container .mix.category-1{
