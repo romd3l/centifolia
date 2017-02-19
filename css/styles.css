@@ -99,11 +99,8 @@ h1 {
 /*BACKGROUND FAT*/
 /*###########*/
 body {
-  background: url('../img/bg-rose-abeille.jpg') no-repeat center fixed ;
-	margin:0;
-  padding:0;
-  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-  background-size: cover; /* version standardisée */
+	background: url('../img/bg-rose-abeille.jpg') no-repeat center top ;
+  background-size: cover;
 }
 /*###########*/
 /*HEADER-FIXE*/
@@ -133,8 +130,10 @@ body {
 /*#########*/
 /*CONTENT slogan+menu*/
 /*#########*/
-/*.firstScreen**/
-/*#########*/
+.firstScreen{
+	width: 100%;
+	height: 500px;
+	}/*#########*/
 /*SLOGAN*/
 /*#########*/
 #sloganHook span {
