@@ -12,6 +12,14 @@ html{
 	font: normal 16px sans-serif;
 	color: #555;
 }
+.page {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 4px;
+	border-radius: 0px;
+	padding-top: 3px;
+	}
 ul, nav{
 	list-style: none;
 }
@@ -233,7 +241,7 @@ nav svg+span {
     display:flex;
 }
 .gif img {
-     border: 3px solid green;
+     border: 3px solid #dcdcdc;
      width: 100%;
      flex:1;
      flex-shrink: 1;
@@ -285,20 +293,18 @@ nav svg+span {
 .vie-association  .grid li p{
     margin: 0;
 }
-
-
+.vie-association .grid li.third{
+	flex-basis: 33%;
+}
 .vie-association .grid li.small{
 	flex-basis: 40%;
 }
-
 .vie-association .grid li.medium{
 	flex-basis: 50%;
 }
-
 .vie-association .grid li.large{
 	flex-basis: 60%;
 }
-
 .vie-association .grid li.full{
 	flex-basis: 100%;
 }
@@ -427,7 +433,7 @@ nav svg+span {
 
 footer{
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
 	text-align: center;
 	color: #fff;
@@ -471,54 +477,6 @@ footer p a{
 	}
 
 }
-
-
-
-
-
-
-
-/*buttons Adhésion-Contact-Pré-Commande */
-.side-btns{
-  position: fixed;
-  top: 50%;
-  right: 0px;
-  width: 115px;
-  height: 0px;
-  text-align:right;
-  z-index:9999;
-    margin-top:-15px;
-}
-
-.side-btns a{
-                transform: rotate(-90deg);
-				-webkit-transform: rotate(-90deg);
-				-moz-transform: rotate(-90deg);
-				-o-transform: rotate(-90deg);
-				filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-                display: block;
-                background: #dcdcdc;
-               text-align:center;
-                height: 15px;
-                width: 165px;
-                padding: 8px 16px;
-                color: #fff;
-                font-family: Arial, sans-serif;
-                font-size: 17px;
-                font-weight: bold;
-                text-decoration: none;
-                border-bottom: solid 1px #333; border-left: solid 1px #333; border-right: solid 1px #fff;
-
-}
-
-.side-btns a:hover {
-				background: #CCC;
-			}
-	/*mixitup*/
-	button{
-  font-family: 'Myriad Pro', arial, sans-serif;
-}
-
 .controls{
   padding: 2%;
   background: #333;

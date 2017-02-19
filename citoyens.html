@@ -5,18 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CENTIFOLIA - Monnaie Locale Complémentaire du Pays de Grasse</title>
-
     <link rel="stylesheet" href="css/styles.css">
-    
 </head>
 <body>
+<div class="page">
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/jquery.mixitup.min.js"></script>
-    
-    
     <header id="header" role="banner" class="main-header">
-
 		<h2><a href="accueil.html"> <img src="img/logo.png" alt="Centifolia" ></a></h2>
 		<nav class="header-nav">
 			<li><a href="association.html">ASSOCIATION / MONNAIE LOCALE</a></li>
@@ -25,145 +21,32 @@
 			<li><a href="faq.html">FAQ / RESSOURCES</a></li>
 		</nav>
 	</header>
-    
-   <div class="side-btns">
-      <a id="side-adhesion" href="adhesion.html">Adhésion</a>
-      <a id="side-contact"  href="contact.html">Contact</a>
-      <a id="side-cde" href="pre-commande.html">Pré-commande</a>
-    </div>
-    
     <section class="centifolia">
 		<div class="background-image" style="background-image: url(img/bg-citoyens.jpg);"></div>
          <h1>CITOYENS</h1>
 		<h1>ADHERENTS</h1>
 	</section>
-    
     <section class="vie-association">
-    <ul class="grid">
-			
-             <li class="small">
-                <img  class="motif-fleur" src="img/motif-fleur.png" alt="Centifolia" >
-				<h4>LES POINTS DE CHANGE</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
+        <ul class="grid">
+             <li class="large">
+            	<h4>POINTS DE CHANGE</h4>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
+            </li>
+            <li class="small">
+              
 			</li>
-            <li class="large">
-                <img  src="img/change-boulangerie.png" alt="Changer des euros contre des centifolia" >
+             <li class="full">
+                <iframe id="Iframe1" src="https://fr.batchgeo.com/map/9e47568053c2fa28d7c7113756f91edb" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </li>
-
-			
-            <li class="large">
-               <iframe id="map" src="https://fr.batchgeo.com/map/9e47568053c2fa28d7c7113756f91edb" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+             <li class="full">
+                <h4>Mon intérêt d'employer des Centifolia</h4>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
             </li>
-		
-           
-        </ul>
-	</section>
-    
-	<h3>BUREAUX DE CHANGE</h3>  
-         <div class="controls">
-            <label>TRIER PAR :</label>
-  
-                <button class="filter" data-filter="all">All</button>
-                <button class="filter" data-filter=".category-1">Grasse</button>
-                <button class="filter" data-filter=".category-2">Mouans-Sartoux</button>
-                <button class="filter" data-filter=".category-3">Autres</button>
-  
-            <label>Sort:</label>
-  
-                <button class="sort" data-sort="myorder:asc">Asc</button>
-                <button class="sort" data-sort="myorder:desc">Desc</button>
-         </div>
-
-         <div id="Container" class="container">
-            <div class="mix category-1" data-myorder="1"><img src="img/adherent-01.jpg" /></div>
-            <div class="mix category-1" data-myorder="2"><img src="img/produit2.png" /></div>
-            <div class="mix category-1" data-myorder="3"><img src="img/produit3.png" /></div>
-            <div class="mix category-2" data-myorder="4"><img src="img/produit4.png" /></div>
-            <div class="mix category-2" data-myorder="5"><img src="img/produit5.jpg" /></div>
-            <div class="mix category-2" data-myorder="6"><img src="img/produit6.jpg" /></div>
-            <div class="mix category-3" data-myorder="7"><img src="img/produit7.jpg" /></div>
-            <div class="mix category-3" data-myorder="8"><img src="img/produit8.jpg" /></div>
-            <div class="mix category-3" data-myorder="9"><img src="img/produit9.jpg" /></div>
-            <div class="mix category-3" data-myorder="1"><img src="img/produit10.jpg" /></div>
-  
-            <div class="gap"></div>
-            <div class="gap"></div>
-        </div>
-     
-
-<footer>
-		<ul>
-			<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-			<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-			<li><a href="#"><i class="fa fa-snapchat-square"></i></a></li>
-			<li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
-			<li><a href="#"><i class="fa fa-github-square"></i></a></li>
-		</ul>
-		<p>Credits Frédéric Marino - Louis Martinon - Isabelle Delatour</p>
-	</footer>
-
-
-
-
-
-<script type="text/javascript">
-/*
-	Sticky menu script
- */
-
-(function(w,d,undefined){
-	var el_html = d.documentElement,
-		el_body = d.getElementsByTagName('body')[0],
-		header = d.getElementById('header'),
-		menuIsStuck = function(triggerElement) {
-			var _scrollTop	= w.pageYOffset || el_body.scrollTop,
-				regexp		= /(nav\-is\-stuck)/i,
-				classFound	= el_html.className.match( regexp ),
-				navHeight	= header.offsetHeight,
-				bodyRect	= el_body.getBoundingClientRect(),
-				scrollValue	= triggerElement ? triggerElement.getBoundingClientRect().top - bodyRect.top - navHeight  : 800,
-				scrollValFix = classFound ? scrollValue : scrollValue + navHeight;
-
-			// if scroll down is 700 or more and nav-is-stuck class doesn't exist
-			if ( _scrollTop > scrollValFix && !classFound ) {
-				el_html.className = el_html.className + ' nav-is-stuck';
-				el_body.style.paddingTop = navHeight + 'px';
-			}
-
-			// if we are to high in the page and nav-is-stuck class exists
-			if ( _scrollTop <= 2 && classFound ) {
-				el_html.className = el_html.className.replace( regexp, '' );
-				el_body.style.paddingTop = '0px';
-			}
-		},
-		onScrolling = function() {
-			// this function fires menuIsStuck()…
-			menuIsStuck( d.getElementById('main') );
-			// and could do more stuff below
-		};
-
-
-	el_html.className = el_html.className + ' js';
-
-	// when you scroll, fire onScrolling() function
-	w.addEventListener('scroll', function(){
-		w.requestAnimationFrame( onScrolling );
-	});
-
-
-}(window, document));
-
-		
-		
-		
-
-
-
-</script>
-
-
-
-
-
+             <li class="full">
+                <h4>Les moyens de gagner des Centifolia</h4>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>            </li>
+         </ul>
+    </section>
+</div>
 </body>
 </html>

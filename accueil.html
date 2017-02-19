@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>CENTIFOLIA - Monnaie Locale Complémentaire du Pays de Grasse</title>
 </head>
-
 <body>
+<div class="page">
 <!-- NAVIGATION MENU   -->
 	<header id="header" role="banner" class="main-header">
-		<div >
+	 <div >
       <h1>
         <a href="accueil.html"><img class="motif-fleur" src="img/logo-menu.png" alt="Centifolia" >Centifolia</a>
       </h1>
@@ -22,7 +22,6 @@
   </header>
     <!--NAVIGATION-->
   <div class="firstSreen">
-
     <div id="sloganHook">
       <h6>C'est une bonne <span>journée</span> pour commencer à <span>consommer</span> autrement</h6>
     </div>
@@ -67,21 +66,9 @@
     </nav>
     <!--FIN-NAVIGATION-->
   </div>
-
-
-    <div class="side-btns">
-      <a id="side-adhesion" href="adhesion.html">Adhésion</a>
-      <a id="side-contact"  href="contact.html">Contact</a>
-      <a id="side-cde" href="pre-commande.html">Pré-commande</a>
-    </div>
-
-
 	<section class="centifolia">
   </section>
-
 <!-- /////////////////////////////////////////////////// -->
-
-
     <section class="accueil-tiles">
 		<ul class="grid">
 			<li id="accueil-tiles-qui">
@@ -90,13 +77,11 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
 			</li>
 			<li id="accueil-tiles-quoi">
-				               <iframe id="Iframe1" src="https://fr.batchgeo.com/map/9e47568053c2fa28d7c7113756f91edb" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
+               <iframe id="Iframe1" src="https://fr.batchgeo.com/map/9e47568053c2fa28d7c7113756f91edb" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</li>
-			
 		</ul>
 	</section>
-    <div class="gif">
+    <div class="gif" style="background-image: url(img/Pays-de-Grasse.jpg);">
          <img  id="Img1" src="img/monnaie-locale.gif" alt="monnaie locale : son utilité, son fonctionnement" >
     </div>
 	<section class="vie-association">
@@ -122,86 +107,16 @@
             </li>
         </ul>
 	</section>
-
 	<section class="newsletter">
 		<h3 class="title">S'abonner à la newsletter</h3>
 		<p>Recevez notre newsletter chaque mois avec les dernières informations sur votre monnaie locale.</p>
 		<hr>
-
 		<form>
 			<input type="email" placeholder="Email">
 			<a href="#" class="btn">S'abonner</a>
 		</form>
 	</section>
-
-	<footer>
-		<ul>
-			<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-			<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-			<li><a href="#"><i class="fa fa-snapchat-square"></i></a></li>
-			<li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
-			<li><a href="#"><i class="fa fa-github-square"></i></a></li>
-		</ul>
-		<p>Credits FLIR</p>
-	</footer>
-
-
-
-<script type="text/javascript">
-/*
-	Sticky menu script
- */
-
-(function(w,d,undefined){
-	var el_html = d.documentElement,
-		el_body = d.getElementsByTagName('body')[0],
-		header = d.getElementById('header'),
-		menuIsStuck = function(triggerElement) {
-			var _scrollTop	= w.pageYOffset || el_body.scrollTop,
-				regexp		= /(nav\-is\-stuck)/i,
-				classFound	= el_html.className.match( regexp ),
-				navHeight	= header.offsetHeight,
-				bodyRect	= el_body.getBoundingClientRect(),
-				scrollValue	= triggerElement ? triggerElement.getBoundingClientRect().top - bodyRect.top - navHeight  : 800,
-				scrollValFix = classFound ? scrollValue : scrollValue + navHeight;
-
-			// if scroll down is 700 or more and nav-is-stuck class doesn't exist
-			if ( _scrollTop > scrollValFix && !classFound ) {
-				el_html.className = el_html.className + ' nav-is-stuck';
-				el_body.style.paddingTop = navHeight + 'px';
-			}
-
-			// if we are to high in the page and nav-is-stuck class exists
-			if ( _scrollTop <= 2 && classFound ) {
-				el_html.className = el_html.className.replace( regexp, '' );
-				el_body.style.paddingTop = '0px';
-			}
-		},
-		onScrolling = function() {
-			// this function fires menuIsStuck()…
-			menuIsStuck( d.getElementById('main') );
-			// and could do more stuff below
-		};
-
-
-	el_html.className = el_html.className + ' js';
-
-	// when you scroll, fire onScrolling() function
-	w.addEventListener('scroll', function(){
-		w.requestAnimationFrame( onScrolling );
-	});
-
-
-}(window, document));
-
-
-
-
-
-
-
-</script>
-
+</div>
 </body>
 
 </html>

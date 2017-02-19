@@ -5,15 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CENTIFOLIA - Monnaie Locale Complémentaire du Pays de Grasse</title>
-
     <link rel="stylesheet" href="css/styles.css">
-
 </head>
-
 <body>
-
+<div class="page">
 <header id="header" role="banner" class="main-header">
-
 		<h2><a href="accueil.html"> <img class="motif-fleur" src="img/logo-menu.png" alt="Centifolia" ></a></h2>
 		<nav class="header-nav">
 			<li><a href="association.html">ASSOCIATION / MONNAIE LOCALE</a></li>
@@ -22,124 +18,47 @@
 			<li><a href="faq.html">FAQ / RESSOURCES</a></li>
 		</nav>
 	</header>
-
-   <div class="side-btns">
-      <a id="side-adhesion" href="adhesion.html">Adhésion</a>
-      <a id="side-contact"  href="contact.html">Contact</a>
-      <a id="side-cde" href="pre-commande.html">Pré-commande</a>
-    </div>
-
 	<section class="centifolia">
 		<div class="background-image" style="background-image: url(img/bg-assoc.jpg);"></div>
 		<h1>ASSOCIATION</h1>
 		<h3>MONNAIE LOCALE</h3>
 	</section>
-
-   
-	<section class="vie-association">
-		<ul class="grid">
+    <section class="vie-association">
+        <ul class="grid">
+             <li class="full">
+            	<h4>LE BILLET</h4>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
+            </li>
 			 <li class="large">
-            	<h4>QUI SOMMES-NOUS</h4>
+            	<h4>LA GAMME</h4>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
             </li>
             
             <li class="small">
-                <img src="img/assoc-tracteur.jpg" alt="association-apese" >
+                <h4>LES DERIVES</h4>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
 			</li>
-               
-            <li class="small">
-                <img src="img/coul-02.png" alt="Centifolia" >
-			</li>       
-            <li class="large">
-            <h4>L'APESE</h4>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
-            </li>
-             <li class="large">
-            	<h4>CENTIFOLIA</h4>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
-            </li>
-            
-            <li class="small">
-                <img src="img/coul-03.png" alt="Centifolia" >
+       		<li  class="third">
+				<img  class="motif-fleur" src="img/motif-fleur.png" alt="Centifolia" >
+				<h4>Nous</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
 			</li>
-               
-            <li class="small">
-                <img src="img/coul-04.png" alt="Centifolia" >
-			</li>       
-            <li class="large">
-            <h4>LES BILLETS</h4>
+			<li  class="third">
+				<img  class="motif-fleur" src="img/motif-fleur.png" alt="Centifolia" >
+				<h4>L'Apese</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
+			</li>
+			<li  class="third">
+				<img  class="motif-fleur" src="img/motif-fleur.png" alt="Centifolia" >
+				<h4>Agréments</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
+			</li>
+             <li class="full">
+            	<h4>RESSOURCES :</h4>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
             </li>
-            
-		</ul>
 	</section>
-	
-   
-	<footer>
-		<ul>
-			<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-			<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-			<li><a href="#"><i class="fa fa-snapchat-square"></i></a></li>
-			<li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
-			<li><a href="#"><i class="fa fa-github-square"></i></a></li>
-		</ul>
-		<p>Credits Frédéric Marino - Louis Martinon - Isabelle Delatour</p>
-	</footer>
-    <script type="text/javascript">
-        /*
-            Sticky menu script
-         */
-
-        (function (w, d, undefined) {
-            var el_html = d.documentElement,
-                el_body = d.getElementsByTagName('body')[0],
-                header = d.getElementById('header'),
-                menuIsStuck = function (triggerElement) {
-                    var _scrollTop = w.pageYOffset || el_body.scrollTop,
-                        regexp = /(nav\-is\-stuck)/i,
-                        classFound = el_html.className.match(regexp),
-                        navHeight = header.offsetHeight,
-                        bodyRect = el_body.getBoundingClientRect(),
-                        scrollValue = triggerElement ? triggerElement.getBoundingClientRect().top - bodyRect.top - navHeight : 800,
-                        scrollValFix = classFound ? scrollValue : scrollValue + navHeight;
-
-                    // if scroll down is 700 or more and nav-is-stuck class doesn't exist
-                    if (_scrollTop > scrollValFix && !classFound) {
-                        el_html.className = el_html.className + ' nav-is-stuck';
-                        el_body.style.paddingTop = navHeight + 'px';
-                    }
-
-                    // if we are to high in the page and nav-is-stuck class exists
-                    if (_scrollTop <= 2 && classFound) {
-                        el_html.className = el_html.className.replace(regexp, '');
-                        el_body.style.paddingTop = '0px';
-                    }
-                },
-                onScrolling = function () {
-                    // this function fires menuIsStuck()…
-                    menuIsStuck(d.getElementById('main'));
-                    // and could do more stuff below
-                };
-
-
-            el_html.className = el_html.className + ' js';
-
-            // when you scroll, fire onScrolling() function
-            w.addEventListener('scroll', function () {
-                w.requestAnimationFrame(onScrolling);
-            });
-
-
-        }(window, document));
-
-
-
-
-
-
-
-</script>
-
+</div>
 </body>
 
 </html>
