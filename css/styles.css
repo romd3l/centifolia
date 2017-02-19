@@ -91,8 +91,11 @@ h1 {
 /*BACKGROUND FAT*/
 /*###########*/
 body {
-  background: url('../img/bcg-rose-abeille.jpg') no-repeat center top ;
-  background-size: cover;
+  background: url('../img/bg-rose-abeille.jpg') no-repeat center fixed ;
+	margin:0;
+  padding:0;
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
 }
 /*###########*/
 /*HEADER-FIXE*/
@@ -118,14 +121,27 @@ body {
 	#header h1 {
 	  position: fixed;
 	}
+
+/*#########*/
+/*CONTENT slogan+menu*/
+/*#########*/
+/*.firstScreen**/
+/*#########*/
+/*SLOGAN*/
+/*#########*/
+#sloganHook span {
+	display: inline;
+}
+#sloganHook{
+	font-size: 2rem;
+	color: purple;
+	text-shadow: 2px 2px 0 rgba(255, 0, 0, 1);
+}
 /*###########*/
 /*MENU-STICKY*/
 /*###########*/
 .notVisible {
   display: none;
-}
-#menu{
-	margin-top: 90vh
 }
 #menu>ul {
   width: 50%;
@@ -147,17 +163,6 @@ nav svg+span {
 }
 #monnaieMenu, #citoyensMenu, #commercantMenu{
 	display: none;
-}
-/*#########*/
-/*SLOGAN*/
-/*#########*/
-#sloganHook span {
-	display: inline;
-}
-#sloganHook{
-	font-size: 2rem;
-	color: purple;
-	text-shadow: 2px 2px 0 rgba(255, 0, 0, 1);
 }
 /*----------------------
  	Accueil Presentation Section
