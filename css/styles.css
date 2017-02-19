@@ -192,7 +192,7 @@ nav svg+span {
 
 .accueil-tiles .grid li{
 	padding: 0 30px;
-	flex-basis: 33%;
+	flex-basis: 50%;
 	text-align: center;
 }
 
@@ -216,10 +216,7 @@ nav svg+span {
 	.accueil-tiles .grid li:last-child{
 		margin-bottom: 0;
 	}
-
 }
-
-
 @media (max-width: 600px){
 
 	.accueil-tiles .grid li{
@@ -227,6 +224,26 @@ nav svg+span {
 	}
 
 }
+
+/*--------------------
+ 	Animation div
+---------------------*/
+.gif {
+    background-color: #e2b0d1
+    display:flex;
+}
+.gif img {
+     border: 3px solid green;
+     width: 100%;
+     flex:1;
+     flex-shrink: 1;
+     overflow:hidden;
+}
+@media (max-width: 800px){
+ .gif {
+		display:none;
+	}
+ }
 
 
 /*--------------------
@@ -244,7 +261,7 @@ nav svg+span {
 
 .vie-association .grid li{
 	padding: 20px;
-	height: 350px;
+	height: 100%;
 	border-radius: 3px;
 
 	background-clip: content-box;
@@ -302,53 +319,6 @@ nav svg+span {
 
 }
 
-@media (max-width: 800px){
- #gif-monnaie{
-		display:none;
-	}
- }
-
-/*--------------------
- 	Actus Section
---------------------*/
-
-.actus{
-	background-color: #fff;
-}
-
-.actus .info{
-	text-align: center;
-	width: 80%;
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    padding: 0;
-}
-
-.actus .source{
-    font-size: 18px;
-    margin-bottom: 50px;
-}
-
-.actus .source:last-child{
-    margin-bottom: 0;
-}
-
-@media (max-width: 1000px){
-
-	.actus .info{
-		font-size: 20px;
-	}
-
-	.actus .source{
-	    font-size: 16px;
-	}
-
-}
-
-
-
 /*---------------------
  	Newsletter Section
 ---------------------*/
@@ -358,6 +328,8 @@ nav svg+span {
     color:#000000;
     padding-top: 20px;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction:column;
 }
 
 
