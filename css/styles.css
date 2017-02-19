@@ -182,7 +182,7 @@ nav svg+span {
 #accueil-tiles-quoi,
 #accueil-tiles-ou
 {
-    padding:30px 0;
+    padding:0;
 }
 #accueil-tiles-qui
 {
@@ -198,8 +198,8 @@ nav svg+span {
 }
 
 .accueil-tiles .grid li{
-	padding: 0 30px;
-	flex-basis: 50%;
+	padding: 0 ;
+	flex-basis: 40%;
 	text-align: center;
 }
 
@@ -267,28 +267,21 @@ nav svg+span {
  }
 
 .vie-association .grid li{
-	padding: 20px;
 	height: 100%;
 	border-radius: 3px;
-
 	background-clip: content-box;
 	background-size: cover;
 	background-position: center;
 	background-color: #e4c9bc;
 }
-
 /*pour l'instant, .grid li .grid li h4 et .grid li p en css identique à la classe accueil :*/
 .vie-association  .grid li{
-	padding: 0 30px;
 	text-align: center;
 }
-
 .vie-association  .grid li h4{
 	color: #555;
-    font-size: 20px;
     margin-bottom: 25px;
 }
-
 .vie-association  .grid li p{
     margin: 0;
 }
@@ -307,13 +300,10 @@ nav svg+span {
 .vie-association .grid li.full{
 	flex-basis: 100%;
 }
-
  #map
   {
     height:  350px;
 	}
-
-
 @media (max-width: 1000px){
 
 	.vie-association .grid li.small,
