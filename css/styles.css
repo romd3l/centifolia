@@ -19,6 +19,7 @@ html{
 	padding-bottom: 4px;
 	border-radius: 0px;
 	padding-top: 3px;
+   
 	}
 ul, nav{
 	list-style: none;
@@ -303,12 +304,15 @@ nav svg+span {
   {
     
 	}
+ 
 @media (max-width: 1000px){
 
 	.vie-association .grid li.small,
+    .vie-association .grid li.third,
     .vie-association .grid li.medium,
 	.vie-association .grid li.large{
 		flex-basis: 100%;
+        flex-shrink: 1;
 	}
 
 }
