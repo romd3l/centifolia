@@ -277,6 +277,7 @@ nav svg+span {
 /*pour l'instant, .grid li .grid li h4 et .grid li p en css identique à la classe accueil :*/
 .vie-association  .grid li{
 	text-align: center;
+    min-height:200px;
 }
 .vie-association  .grid li h4{
 	color: #555;
@@ -299,6 +300,7 @@ nav svg+span {
 }
 .vie-association .grid li.full{
 	flex-basis: 100%;
+    
 }
  #map
   {
