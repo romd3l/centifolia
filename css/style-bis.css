@@ -102,6 +102,12 @@ h1 {
   margin: 0 auto;
   top: 40vh;
 }
+.Romain.money .contentScreen,
+.Romain.cito .contentScreen,
+.Romain.comm .contentScreen{
+  top: 50px;
+  border-top: 1px dashed rgba(255,255, 255, 0.5);
+}
 @media (max-width: 1150px) {
   .Romain .contentScreen{
     width: 70%;
