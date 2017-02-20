@@ -224,7 +224,7 @@ nav svg+span {
 		margin-bottom: 0;
 	}
 }
-@media (max-width: 600px){
+@media (max-width: 800px){
 
 	.accueil-tiles .grid li{
 		flex-basis: 100%;
@@ -267,7 +267,6 @@ nav svg+span {
  }
 
 .vie-association .grid li{
-	height: 100%;
 	border-radius: 3px;
 	background-clip: content-box;
 	background-size: cover;
@@ -302,7 +301,7 @@ nav svg+span {
 }
  #map
   {
-    height:  350px;
+    
 	}
 @media (max-width: 1000px){
 
@@ -333,7 +332,6 @@ nav svg+span {
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-
 	max-width: 800px;
 	width: 80%;
 }
@@ -370,9 +368,7 @@ nav svg+span {
 
 .adherents .grid li{
 	padding: 20px;
-	height: 350px;
 	border-radius: 3px;
-
 	background-clip: content-box;
 	background-size: cover;
 	background-position: center;
