@@ -1,0 +1,196 @@
+html *, span, p, a, li{
+  font-family: 'Myriad Pro', sans-serif;
+}
+h1 a , h2, h3, h4, h5{
+  font-family: 'Croissant One', cursive;
+}
+ h3, h6, h6 *,.label {
+  font-family: 'Track', sans-serif;
+}
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul, nav{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	opacity: 0.9;
+}
+a:hover{
+	opacity: 1;
+}
+a.btn{
+	color: #fff;
+	border-radius: 4px;
+	text-transform: uppercase;
+	background-color: #c15497;
+	font-weight: 800;
+	text-align: center;
+}
+
+h1 {
+  margin: 0 auto;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -5px;
+}
+.Romain.bgI{
+  maxwidth: 100%;
+  height: 100vh;
+  background: url('../img/bg-rose-abeille.jpg') no-repeat 40% top ;
+  background-size: cover;
+}
+/*.Romain .fullScreen{
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}*/
+.Romain #header {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  color: #fff;
+  padding: 10px 2vw 0 2vw;
+  background-color: rgba(219, 91, 166, 0.6);
+}
+.Romain #header img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  padding: 3px;
+  margin:0 2vw 0 5vw;
+  background-color: #fff;
+  vertical-align: middle;
+  position: relative;
+  top: -6px;
+}
+.Romain #header span {
+  padding: 40px 0 10px 0;
+  display: block;
+  text-align: center;
+}
+.Romain .contentScreen{
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  top: 40vh;
+}
+@media (max-width: 1150px) {
+  .Romain .contentScreen{
+    width: 70%;
+    /*top: 40vh;*/
+  }
+}
+@media (max-width: 860px) {
+  .Romain .contentScreen{
+    width: 90%;
+    /*top: 40vh;*/
+  }
+}
+.Romain #menu>ul {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+.Romain #menu>ul>li {
+  flex-basis: 33%;
+}
+.Romain .is-sticky #menu>ul {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  transition: background-color 0.7s;
+}
+@media (max-width: 1330px) {
+  .is-sticky #menu{
+    background-color: rgba(219, 91, 166, 1);
+  }
+}
+.Romain .is-sticky #menu>ul>li {
+  flex-basis: 33%;
+}
+.Romain .is-sticky .pictoMonnaie,
+.Romain .is-sticky .pictoCitoyen,
+.Romain .is-sticky .pictoCommercant{
+  display: none;
+}
+.Romain .is-sticky .label {
+  padding: 0px;
+  color: #94c11f;
+  text-shadow: 1px 2px 0 #32420b;
+}
+.Romain .pictoMonnaie{
+  background-image: url("../img/pictoMonnaieW.svg");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+}
+.Romain .pictoCitoyen{
+  background: url("../img/pictoCitoyenW.svg");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+}
+.Romain .pictoCommercant{
+  background: url("../img/pictoCommercantW.svg");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+}
+.Romain .menuTitles:hover .pictoMonnaie{
+  background-image: url("../img/pictoMonnaieP.svg");
+}
+.Romain .menuTitles:hover .pictoCitoyen{
+  background-image: url("../img/pictoCitoyenP.svg");
+}
+.Romain .menuTitles:hover .pictoCommercant{
+  background-image: url("../img/pictoCommercantP.svg");
+}
+@media (max-width: 700px) {
+  .Romain .pictoMonnaie,
+  .Romain .pictoCitoyen,
+  .Romain .pictoCommercant {
+    display: none;
+  }
+  .Romain .label {
+    padding: 0px ;
+  }
+}
+.Romain .menuTitles:hover .label {
+  color: #ea5198;
+}
+.Romain .label{
+  color: #fff;
+}
+.Romain .menuTitles{
+  /*width: 80%;
+  margin: 0 auto;*/
+  display: flex;
+  justify-content: center;
+}
+/*slogan*/
+.Romain #sloganHook  {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 25px;
+}
+.Romain #sloganHook h6 {
+  font-family: 'track', sans-serif;
+  font-size: 2rem;
+  position: relative;
+  top: -20px;
+  padding: 0 10px;
+  color: #94c11f;
+  text-shadow: 3px 3px 0 #32420b;
+}
